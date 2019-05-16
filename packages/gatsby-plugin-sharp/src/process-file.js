@@ -13,7 +13,7 @@ const crypto = require(`crypto`)
 // speedup on resizing heavy loads (~10%). Sharp disables this feature by
 // default as there's been problems with segfaulting in the past but we'll be
 // adventurous and see what happens with it on.
-sharp.simd(true)
+sharp.simd(false)
 
 try {
   // Handle Sharp's concurrency based on the Gatsby CPU count
